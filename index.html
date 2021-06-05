@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>technical documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+
+        <header>Css Documentation</header>
+        <a href="#Itroduction" class="nav-link">Itroduction</a>
+        <a href="#Basics" class="nav-link">Basics</a>
+        <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+        <a href="#Modules" class="nav-link">Modules</a>
+        <a href="#Syntax" class="nav-link">Syntax</a>
+        <a href="#Solving_common_CSS_problems" class="nav-link">Solving common CSS problems</a>
+        <a href="#CSS_is_weird" class="nav-link">CSS is weird</a>
+         <a href="#See_also" class="nav-link">See also</a>
+         
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section"
+        id="Itroduction">
+            <header>Itroduction</header>
+                <p>
+                    Cascading Stylesheets — or CSS — is the first technology you should start learning after HTML. While HTML is used to define the structure and semantics of your content, CSS is used to style it and lay it out. For example, you can use CSS to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
+                </p>
+                <ul>
+
+                <li>
+                    CSS stands for Cascading Style Sheets.
+                </li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+                </ul>
+
+        </section>
+
+
+        <section class="main-section"
+        id="Basics">
+            <header>Basics</header> 
+            <ul>
+
+            <li>Basic familiarity with using computers, and using the Web passively (i.e. looking at it, consuming the content.)</li>
+            <li>A basic work environment set up as detailed in Installing basic software, and an understanding of how to create and manage files, as detailed in Dealing with files.</li>
+
+            <li>Basic familiarity with HTML, as discussed in the Introduction to HTML module.</li>
+
+            </ul>
+        </section>
+
+
+
+        <section class="main-section"
+        id="Prerequisites">
+            <header>Prerequisites</header>
+            <p>
+                You should learn the basics of HTML before attempting any CSS. We recommend that you work through our Introduction to HTML module first.
+            </p>
+            <p>
+                Once you understand the fundamentals of HTML, we recommend that you learn further HTML and CSS at the same time, moving back and forth between the two topics. This is because HTML is far more interesting and much more fun to learn when you apply CSS, and you can't really learn CSS without knowing HTML.
+            </p>
+            <p>
+                Before starting this topic, you should also be familiar with using computers and using the web passively (i.e., just looking at it, consuming the content). You should have a basic work environment set up as detailed in Installing basic software and understand how to create and manage files, as detailed in Dealing with files — both of which are parts of our Getting started with the web complete beginner's module.
+            </p>
+            <p>
+                It is also recommended that you work through Getting started with the web before proceeding with this topic, especially if you are completely new to web development. However, much of what is covered in its CSS basics article is also covered in our CSS first steps module, albeit in a lot more detail.
+            </p>
+        </section>
+
+
+        <section class="main-section"
+        id="Modules">
+            <header>Modules</header>
+            <p>
+                This topic contains the following modules, in a suggested order for working through them. You should definitely start with the first one.
+            </p>
+
+            <h3><u><b>CSS first steps</b></u></h3>
+            
+            <p>
+            
+                CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+
+                <h3><u><b>CSS building blocks</b></u></h3>
+                <p>
+                    This module carries on where CSS first steps left off — now you've gained familiarity with the language and its syntax, and got some basic experience with using it, its time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.
+                </p>
+
+                <h3><u><b>Styling text</b></u></h3>
+
+                <p>
+                    With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals, including setting font, boldness, italics, line and letter spacing, drop shadows and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
+                </p>
+
+                <h3><u><b>CSS Layout</b></u></h3>
+
+                <p>
+                    At this point we've already looked at CSS fundamentals, how to style text, and how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to place your boxes in the right place in relation to the viewport, and one another. We have covered the necessary prerequisites so we can now dive deep into CSS layout, looking at different display settings, modern layout tools like flexbox, CSS grid, and positioning, and some of the legacy techniques you might still want to know about.
+                </p>
+
+        </section>
+
+
+
+        <section class="main-section"
+            id="Syntax">
+            <header>Syntax</header> 
+
+                <h3> <li> <b> <em>Styling HTML elements </em> </b> </li> </h3>
+                
+                <pre>
+                    <code>
+                        h1 {
+                            color: red;
+                          }
+                    </code>
+                  </pre>
+            
+        <p>You can target multiple selectors at once, by separating the selectors with a comma. If I want all paragraphs and all list items to be green my rule looks like this:</p>          
+                <pre>
+                    <code>
+                        p, li {
+                            color: green;
+                        }
+                    </code>
+                  </pre>
+
+                  <h3> <li> <b> <em>Changing the default behavior of elements </em> </b> </li> </h3>
+                    <pre>
+                    <code>
+                        li {
+                            list-style-type: none;
+                          }
+                    </code>
+                    </pre>
+
+
+                    <h3> <li> <b> <em>Adding a Class </em> </b> </li> </h3>
+                <pre>
+                    <code>
+                        .special {
+                            color: orange;
+                            font-weight: bold;
+                          }
+                    </code>
+                  </pre>
+
+                  
+                  <p>Sometimes you will see rules with a selector that lists the HTML element selector along with the class:</p>
+                <pre>
+                    <code>
+                        li.special {
+                            color: orange;
+                            font-weight: bold;
+                          }
+                    </code>
+                  </pre>
+
+
+                  <h4>Try adding this rule to your stylesheet as well:</h4>
+                <pre>
+                    <code>
+                        h1 + p {
+                            font-size: 200%;
+                          }
+                    </code>
+                  </pre>
+
+        </section>
+
+
+
+        <section class="main-section"
+        id="Solving_common_CSS_problems">
+            <header>Solving common CSS problems</header>
+            <p>
+                <a  href="http://https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto">Use CSS to solve common problems</a>  provides links to sections of content explaining how to use CSS to solve very common problems when creating a web page.</p>
+
+            <p>
+                From the beginning, you'll primarily apply colors to HTML elements and their backgrounds; change the size, shape, and position of elements; and add and define borders on elements. But there's not much you can't do once you have a solid understanding of even the basics of CSS. One of the best things about learning CSS is that once you know the fundamentals, usually you have a pretty good feel for what can and can't be done, even if you don't actually know how to do it yet!
+            </p>
+        </section>
+
+        <section class="main-section"
+        id="CSS_is_weird">
+            <header>CSS is weird</header>
+            <p>
+                CSS works a bit differently to most programming languages and design tools you'll come across. Why does it work the way it does? In the following video, Miriam Suzanne provides a useful explanation of why CSS works like it does, and why it has evolved like it has:
+
+            </p>
+            <center>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/aHUtMbJw8iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </center>
+            </section>
+        
+        
+        
+        <section class="main-section"
+        id="See_also">
+            <header>See also</header>
+
+            <h3><u><b>CSS on MDN</b></u></h3>
+            <p>
+                The main entry point for CSS documentation on MDN, where you'll find detailed reference documentation for all features of the CSS language. Want to know all the values a property can take? This is a good place to go.
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
